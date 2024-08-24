@@ -16,10 +16,12 @@ justify-items: center;
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .galeriadeimagenes img:hover{
     transform: scale(1.1);
+    transition: transform 1s ease;
 }
 
 /* Esta configuracion se hace para nuestros celulares*/
