@@ -1,5 +1,6 @@
-.titulodeimagenes{
+.titulodegaleria{
     text-align: center;
+    color: red;
 }
 
 .galeriadeimagenes{
@@ -22,3 +23,47 @@ justify-items: center;
 }
 
 /* Esta configuracion se hace para nuestros celulares*/
+/* Se Hhace uso Media Queries para manejar el diseno resposivo*/
+@media (max-width: 800px) {
+    .titulodegaleria{
+        text-align: center;
+         color: red;
+    }
+    
+    .galeriadeimagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    }
+    
+    .galeriadeimagenes img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    .titulodegaleria{
+        text-align: center;
+        color: red;
+    }
+    
+    .galeriadeimagenes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    }
+    
+    .galeriadeimagenes img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
